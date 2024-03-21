@@ -35,4 +35,7 @@ else
     ; If Clubdeck is not running, launch the application
     Run(clubdeckPath)
 }
+
+WinGetClass(className, "A")  ; Retrieves the class name of the active window
+ControlSend("", "{Right}", "ahk_class " . className)  ; Sends the Right Arrow key press to the window with the retrieved class name
 ```
