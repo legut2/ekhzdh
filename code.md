@@ -1,3 +1,4 @@
+```
 SetupClubdeck()
 
 ; Defines the setup function for Clubdeck
@@ -19,3 +20,4 @@ SetupClubdeck() {
         Click, 100, 200
     }
 }
+```
