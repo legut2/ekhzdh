@@ -20,4 +20,19 @@ SetupClubdeck() {
         Click, 100, 200
     }
 }
+
+; Replace the path below with the actual path to your Clubdeck executable
+clubdeckPath := "C:\Path\To\Clubdeck\Clubdeck.exe"
+
+; Check if Clubdeck is already running
+if WinExist("ahk_exe Clubdeck.exe")
+{
+    ; If Clubdeck is running, bring it to the foreground
+    WinActivate()
+}
+else
+{
+    ; If Clubdeck is not running, launch the application
+    Run(clubdeckPath)
+}
 ```
